@@ -16,9 +16,11 @@ let package = Package(
 	targets: [
 		.target(
 			name: "Swawsh",
-			dependencies: [
-				"Cryptor",
-				]
-		)
+			dependencies: ["Cryptor"],
+			path: "Sources"
+		),
+		.testTarget(
+			name: "SwawshTests",
+			dependencies: ["Swawsh"])
 	]
 )
